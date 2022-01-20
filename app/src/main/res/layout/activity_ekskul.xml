@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ekskul">
+
+    <LinearLayout
+        android:id="@+id/skul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="EKSKUL SEKOLAH"
+        android:padding="12dp"
+        android:textSize="22dp"
+        android:background="@color/purple_200"
+        android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/skul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/curvea"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/skul"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/gambar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_margin="12dp">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/duasongo"
+                    android:layout_margin="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="SMPN 29 SEMARANG"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_below="@+id/gambar">
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/paskibra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_margin="12dp">
+
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/paskibra"
+                        android:layout_margin="6dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="PASKIBRA"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/pramuka"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/pramuka"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="PRAMUKA"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/jurnalistik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/jurnalistik"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="JURNALISTIK"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/silat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/silat"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="SILAT"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/bta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/bta"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="BTA"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/voli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/voli"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="VOLI"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/senirupa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/senirupa"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="SENI RUPA"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/paduansuara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/paduansuara"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="PADUAN SUARA"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/senitari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/senitari"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="SENI TARI"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

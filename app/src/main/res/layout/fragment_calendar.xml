@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarFragment">
+
+    <LinearLayout
+        android:id="@+id/headerset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_200"
+        android:padding="12dp"
+        android:textSize="22dp"
+        android:text="LOCATION"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="270dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerset">
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOKASI SMPN 29 Semarang"/>
+
+        <Button
+            android:id="@+id/buttonopen"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="OPEN" />
+    </LinearLayout>
+
+</RelativeLayout>

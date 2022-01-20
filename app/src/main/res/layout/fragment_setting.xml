@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+
+        <LinearLayout
+            android:id="@+id/headerset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200"
+                android:padding="12dp"
+                android:textSize="22dp"
+                android:text="ABOUT US"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Kunjungi Kami Disini"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+            
+            
+
+
+    <LinearLayout
+        android:layout_below="@+id/headerset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/YT"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youtube"/>
+
+        <TextView
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/IG"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/instagram"/>
+
+        <TextView
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/WEB"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/global"/>
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Credit:"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text=" Created by : Alfarizky Maulana."
+                android:textSize="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/thanks"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:textSize="20dp"
+                    android:text="UCAPAN TERIMAKASIH"/>
+
+
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

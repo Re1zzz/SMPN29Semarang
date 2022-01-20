@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fasilitas">
+
+    <LinearLayout
+        android:id="@+id/skul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_200"
+            android:padding="12dp"
+            android:textSize="22dp"
+            android:text="FASILITAS SEKOLAH"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/skul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/curvea"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/skul"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/gambar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_margin="12dp">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/duasongo"
+                    android:layout_margin="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="SMPN 29 SEMARANG"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_below="@+id/gambar">
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/perpus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/libraryex"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="PERPUSTAKAAN"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/computer"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/comroom"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="LAB KOMPUTER"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/ipa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/labb"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="LAB IPA"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/seni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/artroom"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="RUANG SENI"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/masjid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:layout_margin="12dp">
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/musholla"
+                            android:layout_margin="6dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="MUSHOLA"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

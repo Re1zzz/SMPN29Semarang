@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:id="@+id/sambutan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="VISI MISI"
+            android:padding="12dp"
+            android:textSize="22dp"
+            android:background="@color/purple_200"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/sambutan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/curvea"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/sambutan"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <LinearLayout
+                android:id="@+id/imageprof"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_margin="12dp">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/duasongo"
+                    android:layout_margin="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="SMPN 29 SEMARANG"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/texting"
+                android:layout_width="match_parent"
+                android:layout_height="810dp"
+                android:layout_below="@+id/imageprof"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="VISI"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:padding="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:text="Pertinggi Budi Pekerti Raih Prestasi."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:textSize="14dp"
+                        android:lineSpacingExtra="8dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="MISI"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8dp"
+                    android:padding="12dp"
+                    android:text="1. Mewujudkan prestasi dan kepribadian siswa yang handal, melalui kegiatan intra dan ekstrakurikuler.\n2. Mewujudkan kurikulum sekolah yang mengacu pada IPTEK dan IMTAQ, yang diintegrasikan dalam kegiatan intra kurikuler pendidikan agama dan kewarganegaraan.\n3. Mewujudkan komunikasi timbal balik dalam proses pembelajaran, melalui kegiatan efektif, kognitif, dan psikomotor.\n4. Mewujudkan SDM yang berkualitas baik rohani maupun jasmani, melalui pendidikan keagamaan dan kewarganegaraan.\n5. Mewujudkan fasilitas pendukung pembelajaran yang memadai, melalui kegiatan pembangunan yang berkesinambungan.\n6. Mewujudkan sistem manajemen sekolah yang berbasis teknologi informasi (IT), melalui aplikasi SIstem Informasi Manajemen (SIM) dan Program Aplikasi Sekolah (PAS).\n7. Mewujdkan pembiayaan investasi, operasional,maupun personal yang standar, melalui kerjasama dengan berbagai pihak.\n8. Mewujudkan penilaian yang aktual dan profesional dan berazaskan kepribadian, melalui penilaian sikap, pengetahuan dan ketrampilan."
+                    android:textSize="14dp" />
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
